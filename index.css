@@ -7,36 +7,64 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 50px;
+    padding: 40px 50px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Largura máxima do formulário */
+    box-sizing: border-box;
 }
-.login input{
-    border-radius: 20px;
-    padding: 10px;
+.login input {
+    border-radius: 80px; /* Tornando os inputs completamente redondos */
+    padding: 12px 20px;
+    width: 100%;  /* Input ocupa toda a largura */
+    margin: 10px -22px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Fundo dos inputs */
+    transition: border 0.3s ease-in-out; /* Transição suave para o foco */
+}
+.login input:focus{
+    outline: none;
+    border-color: #007bff; /* Cor de borda quando o input é focado */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Sombra no foco */
 }
 .botao_login{
-    border-radius: 20px;
-    position: absolute;
-    left: 17%;
-    width: 65%;
-    height: 40px;
+    border-radius: 30px;
+    position: relative;
+    width: 100%;
+    height: 45px;
     border: none;
-    background-color: red;
-    transition: transform 0.3s ease;
-    font-size: 16px;
+    background-color: #007bff; /* Cor do botão */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
 }
 .botao_login:hover{
-    
     transform: scale(1.1);
     cursor: pointer;
-
 }
 .login a{
     position: absolute;
-    top: 100%;
-    left: 77px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+.login a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
 .login h2{
-    position: absolute;
-    bottom: 70%;
-    left: 50px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Cor do título */
+    font-weight: 700;
 }
