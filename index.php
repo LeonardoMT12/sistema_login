@@ -16,6 +16,5 @@
             </form>
         <a href="cadastro.php">Cadastrar Usuário</a> 
     </div>
-    <script src="index.js"></script>
 </body>
 </html>
