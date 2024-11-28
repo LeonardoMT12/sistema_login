@@ -12,7 +12,7 @@
         <form action="cad.php" method="post">
             <input type="email" name="email" placeholder="Email">
             <p><input type="nome" name="nome" placeholder="Nome"></p>
-            <p><input type="senha" name="senha" placeholder="Senha"></p>
+            <p><input type="password" name="senha" placeholder="Senha"></p>
             <button type="submit" class="botao_cadastrar">Cadastrar</button>
         </form>
         <a href="index.php">Já tem Cadastro</a> 
